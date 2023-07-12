@@ -1,0 +1,39 @@
+/* genearl styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding: 5% 10%;
+}
+h1, h3{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+/* description styles */
+.description{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.description h1{
+  font-size: 48px;
+}
+.description p{
+  color: #4F4F4F;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: italic;
+  max-width: 600px;
+}
+.description div{
+  display: flex;
+  gap: 10px;
+}
+.description img{
+  max-width: 100%;
+}
