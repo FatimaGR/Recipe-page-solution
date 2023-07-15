@@ -1,0 +1,66 @@
+/* 750px */
+@media (max-width: 750px){
+  .section-container{
+    flex-direction: column-reverse;
+  }
+  .information{
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+  }
+  .sub-information{
+    flex-direction: row;
+  }
+}
+/* 570px */
+@media (max-width: 570px){
+  body{
+    padding: 7% 3%;
+    font-size: 12px;
+  }
+  h1{
+    font-size: 24px;
+  }
+  h2{
+    font-size: 26px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  main > .description{
+    margin-bottom: 30px;
+  }
+  .section-container{
+    gap: 30px;
+  }
+  .preparation .subtitle{
+    font-size: 16px;
+  }
+  .ingredients{
+    font-size: 14px;
+    gap: 15px;
+  }
+  .ingredients .element,
+  .information .card{
+    gap: 10px;
+  }
+  .information{
+    gap: 20px;
+  }
+  .information .title{
+    font-size: 8px;
+  }
+  .information .description{
+    font-size: 10px;
+  }
+  .information .icon,
+  .information .icon-orange{
+    font-size: 17px;
+  }
+  .instructions{
+    font-size: 16px;
+  }
+  .source{
+    margin-bottom: 30%;
+  }
+}

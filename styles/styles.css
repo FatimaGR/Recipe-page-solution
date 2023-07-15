@@ -22,14 +22,14 @@ body {
   font-size: 16px;
   padding: 5% 16% 2% 16%;
 }
-h1, h3{
+h1, h2, h3{
   font-family: var(--font-family-secondary);
   font-weight: 700;
 }
 h1{
   font-size: 48px;
 }
-h3{
+h2, h3{
   font-size: 24px;
 }
 .italic-element{
@@ -68,6 +68,7 @@ main > .description{
 .section-container{
   display: flex;
   justify-content: space-between;
+  gap: 50px;
 }
 
 /* preparation */
@@ -82,10 +83,14 @@ main > .description{
 .preparation .checkbox{
   appearance: none;
   height: 21px;
-  width: 21px;
+  min-width: 21px;
   border: 1px solid var(--gray-3);
   border-radius: 4px;
   box-sizing: border-box;
+  cursor: pointer;
+}
+.preparation .checkbox:hover{
+  border-color: var(--orange);
 }
 .preparation .checkbox:checked{
   background-color: var(--orange);
@@ -121,8 +126,9 @@ main > .description{
   max-width: 100%;
 }
 .instruction .number{
-  width: 36px;
+  min-width: 36px;
   height: 36px;
+  padding: 3px;
   border-radius: 6px;
   background-color: var(--orange);
   color: var(--white);
@@ -163,12 +169,17 @@ main > .description{
 }
 .information .card{
   display: flex;
+  align-items: center;
   gap: 10px;
   width: 100%;
 }
 .information .icon{
   font-size: 36px;
   color: var(--gray-2);
+}
+.information .icon-orange{
+  font-size: 36px;
+  color: var(--orange);
 }
 .information .title{
   font-size: 10px;
@@ -182,10 +193,13 @@ main > .description{
 }
 
 /* source */
-.source{
+.source, .source a{
   color: var(--gray-4);
   font-style: italic;
   margin: 60px 0;
+}
+.source a:hover{
+  color: var(--orange);
 }
 
 /* footer */
