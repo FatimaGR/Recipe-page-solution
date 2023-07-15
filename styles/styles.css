@@ -10,6 +10,7 @@
   --white: #FFFFFF;
   --gray-1: #333333;
   --gray-2: #4F4F4F;
+  --gray-3: #828282;
   --gray-4: #BDBDBD;
   --orange: #F2994A;
 }
@@ -20,7 +21,7 @@
 body {
   font-family: var(--font-family-primary);
   font-size: 16px;
-  padding: 5% 10%;
+  padding: 5% 16% 2% 16%;
 }
 h1, h3{
   font-family: var(--font-family-secondary);
@@ -45,7 +46,7 @@ h3{
   font-weight: 500;
   font-size: 14px;
   font-style: italic;
-  max-width: 600px;
+  max-width: 580px;
 }
 .description div{
   display: flex;
@@ -67,6 +68,22 @@ h3{
   flex-direction: column;
   gap: 20px;
   max-width: 600px;
+  line-height: 25px;
+}
+.preparation .checkbox{
+  appearance: none;
+  height: 21px;
+  width: 21px;
+  border: 1px solid var(--gray-3);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.preparation .checkbox:checked{
+  background-color: var(--orange);
+  border-color: var(--orange);
+}
+.preparation label{
+  max-width: 90%;
 }
 .ingredients{
   display: flex;
@@ -77,6 +94,7 @@ h3{
   display: flex;
   gap: 15px;
   margin-bottom: 13px;
+  align-items: flex-start;
 }
 .subtitle{
   font-family: var(--font-family-secondary);
@@ -152,4 +170,26 @@ h3{
 .information .description{
   font-size: 14px;
   font-weight: 500;
+}
+
+/* source */
+.source{
+  color: var(--gray-4);
+  font-style: italic;
+  margin: 60px 0;
+}
+
+/* footer */
+footer p{
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #A9A9A9;
+}
+footer a{
+  font-weight: 700;
+  color: #A9A9A9;
+}
+footer a:hover{
+  color: var(--orange);
 }
