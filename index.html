@@ -8,6 +8,7 @@
   maximum-scale=5"
     />
     <link rel="icon" href="./images/devchallenges.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="./styles/global.css">
     <title>Devchallenges</title>
   </head>
@@ -22,47 +23,69 @@
         <img src="./images/photo1.png" alt="Classic cheesecake recipe">
       </section>
       <section class="section-container">
-        <div class="">
+        <div class="preparation">
           <div class="ingredients">
             <h3>Ingredients</h3>
-            <p>Graham Cracker Crust</p>
+            <p class="subtitle">Graham Cracker Crust</p>
     
-            <div>
-              <input type="checkbox" name="ingredients" id="ingredient-1">
-              <label for="ingredient-1">1 and 1/2 cups (150g) <a>graham cracker crumbs</a> (about 10 full sheet graham crackers)</label>
-              <input type="checkbox" name="ingredients" id="ingredient-2">
-              <label for="ingredient-2">5 Tablespoons (70g) <a>unsalted butter</a>, melted</label>
-              <input type="checkbox" name="ingredients" id="ingredient-3">
-              <label for="ingredient-3">1/4 cup (50g) <a>granulated sugar</a></label>
+            <div class="list">
+              <div class="element">
+                <input type="checkbox" name="ingredients" id="ingredient-1">
+                <label for="ingredient-1">1 and 1/2 cups (150g) <b>graham cracker crumbs</b> (about 10 full sheet graham crackers)</label>
+              </div>
+              <div class="element">
+                <input type="checkbox" name="ingredients" id="ingredient-2">
+                <label for="ingredient-2">5 Tablespoons (70g) <b>unsalted butter</b>, melted</label>
+              </div>
+              <div class="element">
+                <input type="checkbox" name="ingredients" id="ingredient-3">
+                <label for="ingredient-3">1/4 cup (50g) <b>granulated sugar</b></label>
+              </div>
             </div>
     
-            <p>Cheesecake</p>
+            <p class="subtitle">Cheesecake</p>
             
-            <div>
-              <input type="checkbox" name="cheesecakes" id="cheesecake-1">
-              <label for="cheesecake-1">four 8-ounce blocks (904g) full-fat <a>cream cheese</a>, softened to room temperature</label>
-              <input type="checkbox" name="cheesecakes" id="cheesecake-2">
-              <label for="cheesecake-2">1 cup (200g) <a>granulated sugar</a></label>
-              <input type="checkbox" name="cheesecakes" id="cheesecake-3">
-              <label for="cheesecake-3">1 cup (240g) full-fat <a>sour cream</a>, at room temperature</label>
-              <input type="checkbox" name="cheesecakes" id="cheesecake-4">
-              <label for="cheesecake-4">1 teaspoon <a>pure vanilla extract</a></label>
-              <input type="checkbox" name="cheesecakes" id="cheesecake-5">
-              <label for="cheesecake-5">2 teaspoons <a>fresh lemon juice</a> (optional, but recommended)</label>
-              <input type="checkbox" name="cheesecakes" id="cheesecake-6">
-              <label for="cheesecake-6">3 large <a>eggs</a>, at room temperature</label>
-              <input type="checkbox" name="cheesecakes" id="cheesecake-7">
-              <label for="cheesecake-7">topping suggestions: salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine chocolate ganache, fresh fruit, whipped cream, or raspberry sauce (recipe in notes) </label>
+            <div class="list">
+              <div class="element">
+                <input type="checkbox" name="cheesecakes" id="cheesecake-1">
+                <label for="cheesecake-1">four 8-ounce blocks (904g) full-fat <b>cream cheese</b>, softened to room temperature</label>
+              </div>
+              <div class="element">
+                <input type="checkbox" name="cheesecakes" id="cheesecake-2">
+                <label for="cheesecake-2">1 cup (200g) <b>granulated sugar</b></label>
+              </div>
+              <div class="element">
+                <input type="checkbox" name="cheesecakes" id="cheesecake-3">
+                <label for="cheesecake-3">1 cup (240g) full-fat <b>sour cream</b>, at room temperature</label>
+              </div>
+              <div class="element">
+
+                <input type="checkbox" name="cheesecakes" id="cheesecake-4">
+                <label for="cheesecake-4">1 teaspoon <b>pure vanilla extract</b></label>
+              </div>
+              <div class="element">
+                <input type="checkbox" name="cheesecakes" id="cheesecake-5">
+                <label for="cheesecake-5">2 teaspoons <b>fresh lemon juice</b> (optional, but recommended)</label>
+              </div>
+              <div class="element">
+                <input type="checkbox" name="cheesecakes" id="cheesecake-6">
+                <label for="cheesecake-6">3 large <b>eggs</b>, at room temperature</label>
+              </div>
+              <div class="element">
+                <input type="checkbox" name="cheesecakes" id="cheesecake-7">
+                <label for="cheesecake-7">topping suggestions: <a class="italic-element">salted caramel, lemon curd, strawberry topping, chocolate ganache, red wine chocolate ganache, fresh fruit, whipped cream, or raspberry sauce</a> (recipe in notes) </label>
+              </div>
             </div>
           </div>
           <div class="instructions">
+            <h3>Instructions</h3>
             <div class="instruction">
               <p class="number">1</p>
               <p>Adjust the oven rack to the lower-middle position and preheat oven to 350°F (177°C).</p>
             </div>
             <div class="instruction">
               <p class="number">2</p>
-              <p><a>Make the crust:</a> Using a food processor, pulse the graham crackers into crumbs. 
+              <p><b>Make the crust:</b> Using a food processor, pulse the graham crackers into crumbs. 
                 Pour into a medium bowl and stir in sugar and melted butter until combined. 
                 (You can also pulse it all together in the food processor.) Mixture will be sandy. 
                 Press firmly into the bottom and slightly up the sides of a 9-inch or 10-inch springform pan. 
@@ -72,7 +95,7 @@
             </div>
             <div class="instruction">
               <p class="number">3</p>
-              <p><a>Make the filling:</a> Using a handheld or stand mixer fitted with a paddle attachment, 
+              <p><b>Make the filling:</b> Using a handheld or stand mixer fitted with a paddle attachment, 
                 beat the cream cheese and granulated sugar together on medium-high speed in a large bowl until the mixture is smooth and creamy, 
                 about 2 minutes. Add the sour cream, vanilla extract, and lemon juice then beat until fully combined. 
                 On medium speed, add the eggs one at a time, beating after each addition until just blended. 
@@ -81,7 +104,7 @@
             </div>
             <div class="instruction">
               <p class="number">4</p>
-              <p><a>Prepare the simple water bath (see note)</a> Boil a pot of water. You need 1 inch of water in your roasting pan for the water bath, 
+              <p><b>Prepare the simple water bath (see note)</b> Boil a pot of water. You need 1 inch of water in your roasting pan for the water bath, 
                 so make sure you boil enough. I use an entire kettle of hot water. As the water is heating up, wrap the aluminum foil 
                 around the springform pan. Pour the cheesecake batter on top of the crust. Use a rubber spatula or spoon to smooth it into an even layer. 
                 Place the pan inside of a large roasting pan. Carefully pour the hot water inside of the pan and place in the oven. 
@@ -106,33 +129,41 @@
             </div>
           </div>
         </div>
-        <div class="other">
+        <div class="information">
           <div class="card">
-            <img src="" alt="">
+            <span class="material-symbols-outlined icon orange">
+              restaurant_menu
+            </span>
             <div>
-              <p>Yields</p>
-              <p>12 servings</p>
+              <p class="title">Yields</p>
+              <p class="description orange">12 servings</p>
             </div>
           </div>
           <div class="card">
-            <img src="" alt="">
+            <span class="material-symbols-outlined icon">
+              schedule
+            </span>
             <div>
-              <p>Prep TIme</p>
-              <p>45 minutes</p>
+              <p class="title">Prep TIme</p>
+              <p class="description">45 minutes</p>
             </div>
           </div>
           <div class="card">
-            <img src="" alt="">
+            <span class="material-symbols-outlined icon">
+              schedule
+            </span>
             <div>
-              <p>Cook Time</p>
-              <p>1 hour</p>
+              <p class="title">Cook Time</p>
+              <p class="description">1 hour</p>
             </div>
           </div>
           <div class="card">
-            <img src="" alt="">
+            <span class="material-symbols-outlined icon">
+              schedule
+            </span>
             <div>
-              <p>Total Time</p>
-              <p>7,75 hours</p>
+              <p class="title">Total Time</p>
+              <p class="description">7,75 hours</p>
             </div>
           </div>
         </div>

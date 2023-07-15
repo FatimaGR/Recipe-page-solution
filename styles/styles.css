@@ -7,6 +7,7 @@
   --font-family-secondary: 'Playfair Display', serif;
   /* colors */
   --black: #000000;
+  --white: #FFFFFF;
   --gray-1: #333333;
   --gray-2: #4F4F4F;
   --gray-4: #BDBDBD;
@@ -31,9 +32,6 @@ h1{
 h3{
   font-size: 24px;
 }
-/* .other{
-  display: none;
-} */
 
 /* description styles */
 .description{
@@ -60,8 +58,98 @@ h3{
 }
 
 .section-container{
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  justify-items: end;
-  gap: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.preparation{
+  color: var(--gray-1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+}
+.ingredients{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ingredients .element{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 13px;
+}
+.subtitle{
+  font-family: var(--font-family-secondary);
+  font-style: italic;
+  font-size: 18px;
+}
+.italic-element{
+  font-style: italic;
+  font-weight: 500;
+}
+.instructions{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.instruction{
+  display: flex;
+  gap: 15px;
+  max-width: 100%;
+}
+.instruction .number{
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  font-family: var(--font-family-secondary);
+  box-sizing: border-box;
+}
+.instruction p{
+  color: var(--black);
+  line-height: 19.5px;
+  max-width: 528px;
+}
+.instruction b{
+  color: var(--gray-1);
+}
+
+/* information styles */
+.information{
+  height: fit-content;
+  width: 216px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 3%;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px 0px #0000001A;
+}
+.information .card{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.icon{
+  font-size: 36px;
+  color: var(--gray-1);
+}
+.orange{
+  color: var(--orange);
+}
+.information .title{
+  font-size: 10px;
+  color: var(--gray-4);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.information .description{
+  font-size: 14px;
+  font-weight: 500;
 }
